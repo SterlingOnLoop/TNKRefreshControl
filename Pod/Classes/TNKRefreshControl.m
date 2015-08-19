@@ -9,7 +9,7 @@
 #import "TNKRefreshControl.h"
 
 #import <objc/runtime.h>
-#import <JRSwizzle/JRSwizzle.h>
+//#import <JRSwizzle/JRSwizzle.h>
 
 #import "TNKActivityIndicatorView.h"
 
@@ -322,7 +322,7 @@ typedef NS_ENUM(NSUInteger, TNKRefreshControlState) {
 }
 
 
-+ (void)load
+/*+ (void)load
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -376,7 +376,7 @@ typedef NS_ENUM(NSUInteger, TNKRefreshControlState) {
             [sectionView setFrame:sectionViewFrame];
         }
     }
-}
+}*/
 
 @end
 
